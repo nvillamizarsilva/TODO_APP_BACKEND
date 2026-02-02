@@ -12,7 +12,6 @@ export const createApp = () => {
   app.get("/ping", (_req, res) => res.status(200).json({ message: "pong" }));
   // Routes
   app.use('/api/v1/tasks', tasksRoutes);
-  app.get('/api/v1/users', (req, res) => res.status(200).json({ message: "pong" }));
 
   app.use(errorMiddleware);
 
